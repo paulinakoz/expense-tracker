@@ -8,15 +8,15 @@ describe('Testing expense tracker', () => {
     })
 
     it('shows the balance on the page', () => {
-        cy.get('#balance').contains('£0.00')
+        cy.get('#balance').contains('£555.00')
     })
 
     it('shows the income balance on the page', () => {
-        cy.get('#money-plus').contains('+£0.00')
+        cy.get('#money-plus').contains('+665.00')
     })
 
     it('shows the expenses balance on the page', () => {
-        cy.get('#money-minus').contains('-£0.00')
+        cy.get('#money-minus').contains('-110.00')
     })
 
     it('shows the history heading on the page', () => {
